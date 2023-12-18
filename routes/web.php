@@ -36,6 +36,9 @@ Route::get('/riwayat', function () {
     return view('user.riwayatskrining');
 });
 
+Route::get('/home', function () {
+    return view('admin.layouts.main');
+});
 
 //livewire routes
 
