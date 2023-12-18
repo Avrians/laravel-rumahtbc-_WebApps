@@ -15,10 +15,26 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('user.layouts.main');
+Route::get('/welcome', function () {
+    return view('welcome');
 });
 
+
+Route::get('/', function () {
+    return view('user.index');
+});
+
+Route::get('/artikel', function () {
+    return view('user.artikelkesehatan');
+});
+
+Route::get('/tentang', function () {
+    return view('user.tentang');
+});
+
+Route::get('/riwayat', function () {
+    return view('user.riwayatskrining');
+});
 
 
 //livewire routes
