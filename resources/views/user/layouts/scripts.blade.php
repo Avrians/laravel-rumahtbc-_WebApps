@@ -7,3 +7,6 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/script.js"></script>
+
+    <!-- JS Chatbot-->
+    <script src="assets/js/script-chatbot.js"></script>

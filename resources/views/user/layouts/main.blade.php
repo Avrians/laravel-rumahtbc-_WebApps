@@ -19,26 +19,7 @@
 
 <body>
     <!-- ======= Header ======= -->
-    <header id="header" class="d-flex align-items-center">
-        <div class="container d-flex align-items-center">
-            <h1 class="logo me-auto"><a href="index.html">RumahTBC</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-
-            <nav id="navbar" class="navbar">
-                <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-                    <li><a class="nav-link scrollto" href="">Artikel Kesehatan</a></li>
-                    <li><a class="nav-link scrollto" href="">Riwayat Skrining</a></li>
-                    <li><a class="nav-link scrollto" href="">Tentang Kami</a></li>
-                    <li><a class="getstarted" href="">Masuk</a></li>
-                    <li><a class="getregis" href="">Daftar</a></li>
-                </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <!-- .navbar -->
-        </div>
-    </header>
+    @include('user.layouts.header')
     <!-- End Header -->
 
     <!-- ======= Hero Section ======= -->
@@ -55,14 +36,14 @@
                                 Welcome to <span>RumahTBC</span>
                             </h2>
                             <p class="animate__animated animate__fadeInUp">
-                                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
-                                et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque
-                                accusamus repellendus deleniti vel. Minus et tempore modi
-                                architecto.
+                                Selamat datang di RumahTBC, platform kesehatan yang
+                                didedikasikan untuk deteksi dan rehabilitasi penyakit
+                                Tuberkulosis (TBC). Kami berkomitmen untuk memberikan
+                                informasi, layanan, dan dukungan yang Anda butuhkan dalam
+                                perjuangan melawan penyakit TBC.
                             </p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                More</a>
+                            <a href="/register"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Daftar Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -72,17 +53,17 @@
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">
-                                Lorem Ipsum Dolor
+                                Welcome to <span>RumahTBC</span>
                             </h2>
                             <p class="animate__animated animate__fadeInUp">
-                                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
-                                et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque
-                                accusamus repellendus deleniti vel. Minus et tempore modi
-                                architecto.
+                                Selamat datang di RumahTBC, platform kesehatan yang
+                                didedikasikan untuk deteksi dan rehabilitasi penyakit
+                                Tuberkulosis (TBC). Kami berkomitmen untuk memberikan
+                                informasi, layanan, dan dukungan yang Anda butuhkan dalam
+                                perjuangan melawan penyakit TBC.
                             </p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                More</a>
+                            <a href="/register"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Daftar Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -92,17 +73,17 @@
                     <div class="carousel-container">
                         <div class="container">
                             <h2 class="animate__animated animate__fadeInDown">
-                                Sequi ea ut et est quaerat
+                                Welcome to <span>RumahTBC</span>
                             </h2>
                             <p class="animate__animated animate__fadeInUp">
-                                Ut velit est quam dolor ad a aliquid qui aliquid. Sequi ea ut
-                                et est quaerat sequi nihil ut aliquam. Occaecati alias dolorem
-                                mollitia ut. Similique ea voluptatem. Esse doloremque
-                                accusamus repellendus deleniti vel. Minus et tempore modi
-                                architecto.
+                                Selamat datang di RumahTBC, platform kesehatan yang
+                                didedikasikan untuk deteksi dan rehabilitasi penyakit
+                                Tuberkulosis (TBC). Kami berkomitmen untuk memberikan
+                                informasi, layanan, dan dukungan yang Anda butuhkan dalam
+                                perjuangan melawan penyakit TBC.
                             </p>
-                            <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">Read
-                                More</a>
+                            <a href="/register"
+                                class="btn-get-started animate__animated animate__fadeInUp scrollto">Daftar Sekarang</a>
                         </div>
                     </div>
                 </div>
@@ -120,6 +101,7 @@
     <!-- End Hero -->
 
     <main id="main">
+
         <!-- ======= Featured Services Section ======= -->
         <section id="featured-services" class="featured-services section-bg">
             <div class="container">
@@ -127,30 +109,36 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box">
                             <div class="icon"><i class="bi bi-laptop"></i></div>
-                            <h4 class="title"><a href="">Lorem Ipsum</a></h4>
+                            <h4 class="title"><a href="">Tanya Dokter</a></h4>
                             <p class="description">
-                                Voluptatum deleniti atque corrupti quos dolores et quas
-                                molestias excepturi sint occaecati cupiditate non provident
+                                Fitur chat memungkinkan pengguna untuk langsung berkomunikasi
+                                dengan dokter ahli dalam bidang TBC. Pengguna dapat mengajukan
+                                pertanyaan, membagikan gejala, atau mendiskusikan rencana
+                                pengobatan secara langsung melalui platform.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-briefcase"></i></div>
-                            <h4 class="title"><a href="">Dolor Sitema</a></h4>
+                            <div class="icon">
+                                <i class="bi bi-clipboard2-pulse-fill"></i>
+                            </div>
+                            <h4 class="title"><a href="">Riwayat Skrining</a></h4>
                             <p class="description">
-                                Minim veniam, quis nostrud exercitation ullamco laboris nisi
-                                ut aliquip ex ea commodo consequat tarad limino ata
+                                Memberikan akses ke riwayat skrining sebelumnya, memungkinkan
+                                pasien untuk melacak perkembangan kondisi kesehatan terkait
+                                TBC.
                             </p>
                         </div>
                     </div>
                     <div class="col-lg-4 col-md-6">
                         <div class="icon-box">
-                            <div class="icon"><i class="bi bi-calendar4-week"></i></div>
-                            <h4 class="title"><a href="">Sed ut perspiciatis</a></h4>
+                            <div class="icon"><i class="bi bi-clock-history"></i></div>
+                            <h4 class="title"><a href="">Chatbot</a></h4>
                             <p class="description">
-                                Duis aute irure dolor in reprehenderit in voluptate velit esse
-                                cillum dolore eu fugiat nulla pariatur trade stravi
+                                Terdapat Fitur Chatbot yang dapat memberikan dukungan dan
+                                informasi kapanpun, sehingga pengguna dapat mengakses bantuan
+                                dan jawaban atas pertanyaan mereka.
                             </p>
                         </div>
                     </div>
@@ -167,7 +155,7 @@
                 <div class="row">
                     <div class="col-md-6 mb-4">
                         <div class="card border-0">
-                            <img src="assets/images/artikel/kuman.jpg" class="card-img-top" alt="Gambar 1" />
+                            <img src="k" class="card-img-top" alt="Gambar 1" />
                             <div class="card-body">
                                 <h5 class="card-title">Judul Artikel 1</h5>
                                 <p class="card-text">
@@ -274,12 +262,6 @@
             <div class="container">
                 <div class="section-title">
                     <h2>Contact</h2>
-                    <p>
-                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur
-                        ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam
-                        quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea.
-                        Quia fugiat sit in iste officiis commodi quidem hic quas.
-                    </p>
                 </div>
 
                 <div class="row">
@@ -355,26 +337,7 @@
     <!-- End #main -->
 
     <!-- ======= Footer ======= -->
-    <footer id="footer">
-        <div class="container">
-            <h3>RumahTBC</h3>
-            <p>
-                Et aut eum quis fuga eos sunt ipsa nihil. Labore corporis magni
-                eligendi fuga maxime saepe commodi placeat.
-            </p>
-            <div class="social-links">
-                <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-                <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-                <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-                <a href="#" class="google-plus"><i class="bx bxl-skype"></i></a>
-                <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
-            </div>
-            <div class="copyright">
-                &copy; Copyright <strong><span>2023</span></strong>. All Rights Reserved
-            </div>
-            <div>Design By RumahTBC</div>
-        </div>
-    </footer>
+    @include('user.layouts.footer')
     <!-- End Footer -->
 
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i

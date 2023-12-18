@@ -13,3 +13,6 @@
 
     <!-- Custom CSS -->
     <link href="assets/css/style.css" rel="stylesheet" />
+
+    <!-- Custom CSS Chatbot-->
+    <link href="assets/css/style-chatbot.css" rel="stylesheet"/>
