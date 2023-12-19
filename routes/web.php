@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\DokterController;
 use App\Http\Livewire\Chat\CreateChat;
 use App\Http\Livewire\Chat\Main;
 use Illuminate\Support\Facades\Route;
@@ -39,6 +40,11 @@ Route::get('/riwayat', function () {
 Route::get('/home', function () {
     return view('admin.layouts.main');
 });
+
+// Dokter
+Route::get('/dokter/upload-form', [DokterController::class, 'showUploadForm'])->name('dokter.uploadForm');
+Route::post('/dokter/upload', [DokterController::class, 'upload'])->name('dokter.upload');
+
 
 //livewire routes
 

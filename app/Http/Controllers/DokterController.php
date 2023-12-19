@@ -4,59 +4,49 @@ namespace App\Http\Controllers;
 
 use App\Models\Dokter;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Http;
 
 class DokterController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
+    public function showUploadForm()
+    {
+        return view('admin.dokter.upload-form');
+    }
+
+    public function upload(Request $request)
+    {
+        // Menggunakan Http Client untuk mengakses API Flask
+        $response = Http::post('http://127.0.0.1:5000/api/dokter/upload', $request->all());
+
+
+        // Mendapatkan data respons JSON
+        $data = $response->json();
+
+        dd($data);
+        // Kirim data ke view
+        return view('admin.dokter.result')->with($data);
+    }
+
     public function index()
     {
         //
     }
-
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
     public function store(Request $request)
     {
         //
     }
 
-    /**
-     * Display the specified resource.
-     *
-     * @param  \App\Models\Dokter  $dokter
-     * @return \Illuminate\Http\Response
-     */
     public function show(Dokter $dokter)
     {
         //
     }
 
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Dokter  $dokter
-     * @return \Illuminate\Http\Response
-     */
+
     public function update(Request $request, Dokter $dokter)
     {
         //
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  \App\Models\Dokter  $dokter
-     * @return \Illuminate\Http\Response
-     */
     public function destroy(Dokter $dokter)
     {
         //
